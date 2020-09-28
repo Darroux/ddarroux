@@ -1,0 +1,20 @@
+commit 9eecbe67b0c7189a0d191ced8431bf5b9050cf4f
+Merge: eb59b02 88bab5f
+Author: Darroux <66926079+Darroux@users.noreply.github.com>
+Date:   Sun Sep 27 19:46:42 2020 -0300
+
+    Merge pull request #1 from Darroux/ReadMe-Edits
+    
+    Read Me Edits
+
+commit 88bab5f83fa8299ebf2ed201e35d73d1fa28ec57
+Author: Darroux <66926079+Darroux@users.noreply.github.com>
+Date:   Sun Sep 27 19:42:43 2020 -0300
+
+    Update README.md
+
+commit eb59b021f09a917562f13cbfcdb3f20f6214d535
+Author: Darroux <66926079+Darroux@users.noreply.github.com>
+Date:   Sun Sep 27 19:39:00 2020 -0300
+
+    Initial commit
