@@ -113,7 +113,7 @@ tmpfs                183M     0  183M   0% /run/user/1000
 
 [44m*** Free and Used Memory ***[0m
               total        used        free      shared  buff/cache   available
-Mem:        1870832      256492      840428        9192      773912     1436196
+Mem:        1870832      258344      838080        9196      774408     1434292
 Swap:       2097148           0     2097148
 
 [31;43m***** Software Info *****[0m
@@ -702,9 +702,24 @@ To show all installed unit files use 'systemctl list-unit-files'.
 [31;43m***** Network Info *****[0m
 
 [44m*** Network devices ***[0m
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:50:56:00:00:8f brd ff:ff:ff:ff:ff:ff
+3: ens224: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 00:0c:29:18:ce:44 brd ff:ff:ff:ff:ff:ff
 
 
 [44m*** IP Info ***[0m
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 172.17.6.2/16 brd 172.17.255.255 scope global dynamic noprefixroute ens192
+       valid_lft 80890sec preferred_lft 80890sec
+3: ens224: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 192.168.6.2/24 scope global ens224
+       valid_lft forever preferred_lft forever
 
 
 [44m*** Firewall Info ***[0m
@@ -731,9 +746,9 @@ default via 172.17.255.1 dev ens192 proto dhcp metric 100
    Active: active (running) since Wed 2020-10-14 13:37:48 EDT; 10h ago
      Docs: man:httpd.service(8)
  Main PID: 45419 (httpd)
-   Status: "Total requests: 12; Idle/Busy workers 100/0;Requests/sec: 0.000323; Bytes served/sec:   0 B/sec"
+   Status: "Total requests: 39; Idle/Busy workers 100/0;Requests/sec: 0.00103; Bytes served/sec:   0 B/sec"
     Tasks: 213 (limit: 11467)
-   Memory: 25.5M
+   Memory: 26.7M
    CGroup: /system.slice/httpd.service
            ├─45419 /usr/sbin/httpd -DFOREGROUND
            ├─45420 /usr/sbin/httpd -DFOREGROUND
@@ -750,9 +765,9 @@ Oct 14 13:37:48 Dillon-vm2.Darroux httpd[45419]: Server configured, listening on
 
 [44m*** Log sizes ***[0m
 -rw-------. 1 root root 0 Oct 12 03:28 /var/log/boot.log
--rw-------. 1 root root 293748 Oct 14 23:57 /var/log/messages
+-rw-------. 1 root root 301817 Oct 15 00:08 /var/log/messages
 -rw-rw-r--. 1 root utmp 292876 Oct 14 23:00 /var/log/lastlog
--rw-------. 1 root root 54523 Oct 14 23:54 /var/log/secure
+-rw-------. 1 root root 55571 Oct 15 00:04 /var/log/secure
 -rw-------. 1 root root 0 Oct 11 03:35 /var/log/maillog
 -rw-r--r--. 1 root root 432054 Oct 14 23:41 /var/log/dnf.log
 -rw-rw-r--. 1 root utmp 15744 Oct 11 22:30 /var/log/wtmp
