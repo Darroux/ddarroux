@@ -63,11 +63,11 @@ echo ""
 echo -e "\e[31;43m***** Network Info *****\e[0m"
 echo ""
 echo -e "\e[44m*** Network devices ***\e[0m"
-ifconfig -a | sed 's/[ \t].*//;/^$/d'
+ip link show
 echo ""
 echo ""
 echo -e "\e[44m*** IP Info ***\e[0m"
-ifconfig -a
+ip -4 a
 echo ""
 echo ""
 echo -e "\e[44m*** Firewall Info ***\e[0m"
