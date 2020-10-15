@@ -79,7 +79,7 @@ cat /etc/resolv.conf
 echo""
 echo""
 echo -e "\e[44m*** Routing Table ***\e[0m"
-route -n
+ip r
 echo""
 echo""
 echo -e "\e[44m*** HTTP Server Port ***\e[0m"
