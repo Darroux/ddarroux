@@ -77,5 +77,26 @@ echo ""
 echo -e "\e[44m*** DNS Info ***\e[0m"
 cat /etc/resolv.conf
 echo""
+echo""
+echo -e "\e[44m*** Routing Table ***\e[0m"
+route -n
+echo""
+echo""
+echo -e "\e[44m*** HTTP Server Port ***\e[0m"
+systemctl status httpd
+echo""
+echo""
 
+#Log Files
+echo -e "\e[31;43m***** Logs Info *****\e[0m"
+echo""
+echo -e "\e[44m*** Log sizes ***\e[0m"
+ls -l /var/log/boot.log
+ls -l /var/log/messages
+ls -l /var/log/lastlog
+ls -l /var/log/secure
+ls -l /var/log/maillog
+ls -l /var/log/dnf.log
+ls -l /var/log/wtmp
+ls -l /var/log/btmp
 
